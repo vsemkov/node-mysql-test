@@ -1,0 +1,5 @@
+#!/usr/bin/env coffee
+
+process.env.NODE_CONFIG_DIR = __dirname + '/config'
+cfg = require 'config'
+console.log cfg[process.argv[2]][process.argv[3]]
